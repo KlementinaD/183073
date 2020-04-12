@@ -44,9 +44,9 @@ class Student {
 	}
 
 	public double getAverage() {
-		double avg;
-		int count;
-		for (int i=0;i,grades.length;i++){
+		double avg=0;
+		int count=0;
+		for (int i=0;i<grades.length;i++){
 			avg+=grades[i];
 			count++;
 		}
@@ -54,7 +54,7 @@ class Student {
 	}
 
 	public int ECTSCredits() {
-		int passed;
+		int passed=0;
 		for (int i =0;i<grades.length;i++){
 			if (grades[i]>5){
 				passed++;
